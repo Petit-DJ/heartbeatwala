@@ -4,8 +4,8 @@ import { Reveal } from "@/components/Reveal";
 import { branches, site } from "@/data/site";
 import roomImg from "@/assets/about-room.jpg";
 import teacherImg from "@/assets/journey-teacher.jpg";
-import communityImg from "@/assets/journey-community.jpg";
-import g1 from "@/assets/gallery-1.jpg";
+import peopleImg from "@/assets/about-community.png";
+import philosophyImg from "@/assets/about-philosophy.webp";
 import g5 from "@/assets/gallery-5.jpg";
 
 export const Route = createFileRoute("/about")({
@@ -133,7 +133,7 @@ function About() {
             </Reveal>
             <Reveal delay={120} className="grid grid-cols-2 gap-4 lg:col-span-6">
               <img
-                src={g1}
+                src={philosophyImg}
                 alt="A student practising guitar"
                 width={1000}
                 height={1300}
@@ -157,7 +157,7 @@ function About() {
         <div className="mx-auto max-w-6xl px-6 sm:px-10">
           <Reveal>
             <img
-              src={communityImg}
+              src={peopleImg}
               alt="HBMC students and teachers together with instruments"
               width={1600}
               height={1008}
@@ -212,9 +212,6 @@ function About() {
                   </div>
                 ))}
               </div>
-              {/* <p className="mt-4 text-xs text-muted-foreground">
-                Addresses are placeholders.
-              </p> */}
             </Reveal>
           </div>
         </div>

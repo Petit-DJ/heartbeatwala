@@ -4,9 +4,8 @@ export const site = {
   name: "HeartBeat Musicals & Classes",
   // shortName: "",
   tagline: "Where music becomes a journey.",
-  // PLACEHOLDER contact details
   phone: "+91 80061 28530",
-  email: "hello@example.com",
+  // email: "hello@example.com",
   socials: [
     { label: "Instagram", href: "https://www.instagram.com/heartbeatwala/" },
     { label: "YouTube", href: "https://www.youtube.com/@souravkashyap4555" },

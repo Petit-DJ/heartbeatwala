@@ -16,8 +16,8 @@ import guitarImg from "@/assets/course-guitar.jpg";
 import pianoImg from "@/assets/course-piano.jpg";
 import drumsImg from "@/assets/course-drums.jpg";
 import fluteImg from "@/assets/course-flute.jpg";
-import roomImg from "@/assets/about-room.jpg";
-import galleryImg from "@/assets/gallery-2.jpg";
+import classBr from "@/assets/classes-3-br.jpeg";
+import classJoin from "@/assets/classes-join.webp";
 
 export const Route = createFileRoute("/classes")({
   head: () => ({
@@ -239,7 +239,7 @@ function Locations() {
         <div className="mt-12 grid gap-10 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <img
-              src={roomImg}
+              src={classBr}
               alt="Inside an HBMC teaching room"
               width={1600}
               height={1104}
@@ -265,9 +265,6 @@ function Locations() {
                 </Reveal>
               ))}
             </div>
-            {/* <p className="mt-5 text-xs text-muted-foreground">
-              Addresses and map links are placeholders.
-            </p> */}
           </div>
         </div>
       </div>
@@ -326,7 +323,7 @@ function WhoCanJoin() {
           </Reveal>
           <Reveal delay={100} className="lg:col-span-6">
             <img
-              src={galleryImg}
+              src={classJoin}
               alt="Students practising together at HBMC"
               width={1400}
               height={1000}

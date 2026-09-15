@@ -11,13 +11,17 @@ import heroImg from "@/assets/hero-guitarist.jpg";
 import teacherImg from "@/assets/journey-teacher.jpg";
 import learningImg from "@/assets/journey-learning.jpg";
 import stageImg from "@/assets/journey-stage.jpg";
-import communityImg from "@/assets/journey-community.jpg";
 import masterclassImg from "@/assets/masterclass.jpg";
-import roomImg from "@/assets/about-room.jpg";
 import guitarImg from "@/assets/course-guitar.jpg";
 import pianoImg from "@/assets/course-piano.jpg";
 import drumsImg from "@/assets/course-drums.jpg";
 import fluteImg from "@/assets/course-flute.jpg";
+import aboutImg from "@/assets/index-about.jpeg";
+import imprImg from "@/assets/index-improvement.jpeg";
+import community from "@/assets/index-community.jpeg"
+import eve2 from "@/assets/index-ord-eve-2.jpeg"
+import eve3 from "@/assets/index-ord-eve3.jpeg"
+
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
@@ -163,10 +167,10 @@ function Intro() {
               <br />
               is learnt together.
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               HeartBeat Musicals &amp; Classes started as a small teaching space and
               grew, slowly, into something closer to a family. People arrive to learn
-              an instrument and end up staying for the company.
+              an instrument and ... somehow end up staying for the company.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               Classes are unhurried. Teachers sit beside you rather than in front of
@@ -175,7 +179,7 @@ function Intro() {
             </p>
             <Link
               to="/about"
-              className="link-underline mt-8 inline-block text-sm tracking-wide text-terracotta"
+              className="link-underline mt-2 inline-block text-sm tracking-wide text-terracotta"
             >
               More about us →
             </Link>
@@ -183,12 +187,12 @@ function Intro() {
 
           <Reveal delay={120} className="relative lg:col-span-7">
             <img
-              src={roomImg}
+              src={aboutImg}
               alt="A sunlit HBMC music room with a piano, guitar and drum kit"
               width={1600}
               height={1104}
               loading="lazy"
-              className="w-full rounded-3xl object-cover"
+              className="h-[400px]  w-full rounded-3xl object-cover"
             />
             <img
               src={g1}
@@ -283,7 +287,7 @@ function Journey() {
           </Reveal>
           <Reveal delay={100} className="grid grid-cols-5 gap-4 lg:col-span-6">
             <img
-              src={g2}
+              src={imprImg}
               alt="Two students practising together on keyboard and guitar"
               width={1400}
               height={1000}
@@ -330,7 +334,7 @@ function Journey() {
         <div className="mt-24 grid items-center gap-10 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">
             <img
-              src={communityImg}
+              src={community}
               alt="Students and teachers sitting together with instruments, laughing"
               width={1600}
               height={1008}
@@ -469,16 +473,12 @@ function Community() {
           <h2 className="mt-5 text-4xl leading-[1.08] sm:text-5xl">
             Ordinary evenings, mostly.
           </h2>
-          {/* <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            Photographs shown here are temporary and will be replaced with real
-            pictures from our branches.
-          </p> */}
         </Reveal>
 
         <div className="mt-16 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-12">
           <Reveal className="col-span-2 lg:col-span-7">
             <img
-              src={g4}
+              src={eve3}
               alt="A small audience applauding at an HBMC recital"
               width={1400}
               height={1000}
@@ -496,21 +496,21 @@ function Community() {
               className="h-full w-full rounded-3xl object-cover"
             />
           </Reveal>
-          <Reveal delay={150} className="lg:col-span-4">
-            <img
-              src={g3}
-              alt="Close view of drumsticks on a snare"
-              width={1000}
-              height={1000}
-              loading="lazy"
-              className="h-full w-full rounded-3xl object-cover"
-            />
-          </Reveal>
           <Reveal delay={210} className="col-span-2 lg:col-span-8">
             <img
               src={g2}
               alt="Two students practising together"
               width={1400}
+              height={1000}
+              loading="lazy"
+              className="h-full w-full rounded-3xl object-cover"
+            />
+          </Reveal>
+          <Reveal delay={150} className="lg:col-span-4">
+            <img
+              src={eve2}
+              alt="Hbmc teacher"
+              width={1000}
               height={1000}
               loading="lazy"
               className="h-full w-full rounded-3xl object-cover"
